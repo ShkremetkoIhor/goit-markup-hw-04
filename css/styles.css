@@ -354,13 +354,13 @@ color: var(--logo-color);
 }
 
 /*--------------------------------------------------------------------------------------------------*/
-/* ctrwsz 5*/
+/* Секция 5 (Постоянные клиенты)*/
 .regular-customers-title {
-    color: #212121;
+    color:var(--accent-color); 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
+    text-align: center; 
     letter-spacing: 0.03em;
 
     margin-bottom: 50px;
@@ -382,7 +382,8 @@ color: var(--logo-color);
     border-radius: 4px;
     width: 170px;
     height: 92px;
-    color: red;
+    color: #afb1b8;    
+   
 }
 
 .brand-logo-link:hover,
@@ -392,49 +393,84 @@ color: var(--logo-color);
 }
 
 .brand-logo-icon {
-   color: #757575;
+    fill: currentColor;
 }
 
 
 /* ------------------------------------------------------------------------------------------------------------- */
 /* Footer*/
-.footer{
+footer{
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-font);
+    
 }
-.town{
-    padding-bottom: ;
-    font-style: normal;
-    color:var(--text-color);
-    line-height: 1.5;
+.footer-colums{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
-.town:hover,
-.town:focus{
-    color:var(--logo-color);
-}
-.logof{
-    display: block;
+.botton-logo {
+    display: inline-block;
     margin-bottom: 20px;
     font-family: var(--logo-font);
-    color:var(--text-color);
+    color: var(--logo-color);
 
     font-weight: 700;
     font-size: 26px;
     line-height: 1.9;
 }
-.address-list>li:not(:last-child) {
-      margin-bottom: 9px;
-  } 
-.danif{
-    margin-top: 9px;
-    font-style: normal;
-    color:var(--main-color);
-    line-height:1.5;
+.logo-white{
+    color: var(--text-color);
+
 }
-.danif:hover,
-.danif:focus{
-    color:var(--logo-color);
+.address-link {
+    display: inline-block;
+    font-style: normal;
+    color:rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+}
+.address-list>li:not(:last-child) {
+    margin-bottom: 9px;
+} 
+.address-link:hover,
+.address-link:focus {
+    color: var(--text-color);
+}
+.call-to-action{
+    margin-left: 70px;
+}
+.join{
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--text-color);
+    
+}
+.social-list-footer{
+    display: flex;
+}
+.social-item-footer:not(:last-child){
+margin-right: 10px;
+}
+.social-link-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.social-link-footer:hover,
+.social-link-footer:focus{
+    color: var(--text-color);
+    background-color: var(--logo-color);
+}
+.icon-social-footer{
+    fill: currentColor;
 }
 /*------------------------------------------------------------------End footer-------------------------------------*/
 /* Портфоліо*/
